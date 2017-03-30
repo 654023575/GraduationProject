@@ -24,12 +24,12 @@
     <header class="clearfix">
         <div class="navbar-toggle offcanvas-toggle">
             <div class="pull-right">
-            <button class="btn" data-toggle="offcanvas" data-target="#js-bootstrap-offcanvas">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            </button>
+                <button class="btn" data-toggle="offcanvas" data-target="#js-bootstrap-offcanvas" style="background-color:#f9f7f6;">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </button>   
             </div>
             <div class="pull-left">
                 <a class="navbar-brand" href="#">
@@ -37,8 +37,6 @@
                 </a>
             </div>
         </div>
-
-
         <nav class="navbar navbar-default navbar-offcanvas navbar-offcanvas-right navbar-offcanvas-touch navbar-offcanvas-fade" role="navigation"
             id="js-bootstrap-offcanvas">
             <div class="container-fluid">
@@ -48,8 +46,7 @@
                             <a class="navbar-brand" href="#">
                                 <img src="imgs/logo2.png" alt="logo">
                             </a>
-                            <button type="button" class="navbar-toggle offcanvas-toggle" data-toggle="offcanvas" data-target="#js-bootstrap-offcanvas">
-                            <span class="sr-only">Toggle navigation</span>
+                            <button id="closebtn" class="btn navbar-toggle offcanvas-toggle" data-toggle="offcanvas" data-target="#js-bootstrap-offcanvas">
                             <i class="glyphicon glyphicon-remove"></i>
                             </button>
                         </div>
@@ -97,15 +94,7 @@
 
     <script src="js/app.config.js"></script>
     <script src="js/route.config.js"></script>
-
-    <script>
-        $(".navbar-default .navbar-nav>li").each(function(index){
-                $(this).click(function(){
-                    $(".navbar-default .navbar-nav>li").removeClass("liactive");
-                    $(".navbar-default .navbar-nav>li").eq(index).addClass("liactive")
-                })
-            })
-    </script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

@@ -19,6 +19,9 @@ h1 ,h2, h3, h4, h5, h6
   color: #b4a078;
   border-bottom: solid #b4a078
 }
+.btn:focus{
+  border-color: #f8f8f8;
+}
 /*当屏幕最大为767px*/
 @media screen and (max-width: 767px){
     #js-bootstrap-offcanvas{
@@ -29,17 +32,20 @@ h1 ,h2, h3, h4, h5, h6
     width: 100%;
     margin-right: 0;
     margin-bottom: 0;
-    padding-bottom: 0;
+    padding: 0;
   }
-  .navbar-header{
+  .navbar-header>.navbar-brand{
     display: none;
+  }
+  #closebtn{
+    padding: 10px;
+  }
+  #closebtn:hover,#closebtn:active,#closebtn:visited{
+    background-color: #f8f8f8;
   }
   .navbar-brand>img{
     display: block;
-    margin-top: -38px;
+    margin-top: -27px;
     margin-left: -25px;
-  }
-  .navbar-toggle>div>button{
-    margin-top: -9px;
   }
 }
