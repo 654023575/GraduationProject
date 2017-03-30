@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh-CN" ng-app="myApp">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+    <title>严选</title>
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.offcanvas.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/default.css">
+
+    <style>
+
+    </style>
+</head>
+
+<body class="body-offcanvas">
+
+
+    <header class="clearfix">
+        <div class="navbar-toggle offcanvas-toggle">
+            <div class="pull-right">
+            <button class="btn" data-toggle="offcanvas" data-target="#js-bootstrap-offcanvas">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            </div>
+            <div class="pull-left">
+                <a class="navbar-brand" href="#">
+                    <img src="imgs/logo2.png" alt="logo">
+                </a>
+            </div>
+        </div>
+
+
+        <nav class="navbar navbar-default navbar-offcanvas navbar-offcanvas-right navbar-offcanvas-touch navbar-offcanvas-fade" role="navigation"
+            id="js-bootstrap-offcanvas">
+            <div class="container-fluid">
+                <div class="row" style="height:63px;">
+                    <div class="col-md-10 col-md-offset-1">
+                        <div class="navbar-header">
+                            <a class="navbar-brand" href="#">
+                                <img src="imgs/logo2.png" alt="logo">
+                            </a>
+                            <button type="button" class="navbar-toggle offcanvas-toggle" data-toggle="offcanvas" data-target="#js-bootstrap-offcanvas">
+                            <span class="sr-only">Toggle navigation</span>
+                            <i class="glyphicon glyphicon-remove"></i>
+                            </button>
+                        </div>
+                        <div>
+                            <ul id="nav-menu" class="nav navbar-nav">
+                                <li class="liactive"><a href="#/main">首页</a></li>
+                                <li><a href="#/adminUser">居家</a></li>
+                                <li><a href="#">服装</a></li>
+                                <li><a href="#">餐厨</a></li>
+                                <li><a href="#">配件</a></li>
+                                <li><a href="#">洗护</a></li>
+                                <li><a href="#">婴童</a></li>
+                                <li><a href="#">杂货</a></li>
+                            </ul>
+                            <ul id="nav-user" class="nav navbar-nav navbar-right">
+                                <li><a href="#">登录</a></li>
+                                <li><a href="#">注册</a></li>
+                                <li>
+                                    <a href="#">
+                                        <span class="glyphicon glyphicon-shopping-cart"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div ui-view></div>
+    <!--<div data-ng-include="'views/tpl/bottom.html'">-->
+
+    <!--jquery-->
+    <script src="libs/jquery.min.js"></script>
+    <!--bootstrap-->
+    <script src="libs/bootstrap/js/bootstrap.js"></script>
+    <script src="libs/bootstrap/js/bootstrap.offcanvas.min.js"></script>
+    <!--wow-->
+    <script src="libs/wow/wow.min.js"></script>
+    <!--angularjs-->
+    <script src="libs/angular/angular.min.js"></script>
+    <script src="libs/angular/angular-ui-router/angular-ui-router.js"></script>
+
+    <script src="libs/angular/oclazyload/ocLazyLoad.js"></script>
+
+    <script src="js/app.config.js"></script>
+    <script src="js/route.config.js"></script>
+
+    <script>
+        $(".navbar-default .navbar-nav>li").each(function(index){
+                $(this).click(function(){
+                    $(".navbar-default .navbar-nav>li").removeClass("liactive");
+                    $(".navbar-default .navbar-nav>li").eq(index).addClass("liactive")
+                })
+            })
+    </script>
+</body>
+
+</html>

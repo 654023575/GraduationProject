@@ -1,0 +1,45 @@
+body,button, 
+input, 
+select, 
+textarea,
+h1 ,h2, h3, h4, h5, h6 
+{ font-family: Microsoft YaHei,'宋体' , Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif;}
+ /*导航栏nav*/
+.navbar-default .navbar-nav>li>a{
+  padding: 5px;
+  margin: 15px 10px;
+  color: #000;
+  font-weight: bold;
+}
+.liactive>a{
+  color: #b4a078 !important;
+  border-bottom: solid #b4a078
+}
+.navbar-default .navbar-nav>li>a:hover{
+  color: #b4a078;
+  border-bottom: solid #b4a078
+}
+/*当屏幕最大为767px*/
+@media screen and (max-width: 767px){
+    #js-bootstrap-offcanvas{
+    width: 140px;
+    text-align: center;
+  }
+  .navbar-toggle{
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .navbar-header{
+    display: none;
+  }
+  .navbar-brand>img{
+    display: block;
+    margin-top: -38px;
+    margin-left: -25px;
+  }
+  .navbar-toggle>div>button{
+    margin-top: -9px;
+  }
+}
