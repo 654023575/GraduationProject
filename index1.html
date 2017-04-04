@@ -1,4 +1,22 @@
-<header class="clearfix">
+<!DOCTYPE html>
+<html lang="zh-CN" ng-app="myApp">
+
+<head ng-controller="indexCtrl">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+    <title>{{title.name}}</title>
+    <link rel="stylesheet" href="http://cdn.bootcss.com/animate.css/3.5.2/animate.min.css" media="all">
+    <link rel="stylesheet" href="http://cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" media="all">
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.offcanvas.min.css">
+    <link rel="stylesheet" href="libs/angular/angrular-toaster/toaster.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/default.css">
+</head>
+
+<body class="body-offcanvas">
+    <header class="clearfix" ng-controller="navCtrl">
         <div class="navbar-toggle offcanvas-toggle">
             <div class="pull-right">
                 <button class="btn" data-toggle="offcanvas" data-target="#js-bootstrap-offcanvas" style="background-color:#f9f7f6;">
@@ -55,3 +73,26 @@
             </div>
         </nav>
     </header>
+    <div id="ui-view" ui-view></div>
+    <!--<div data-ng-include="'views/tpl/bottom.html'">-->
+
+    <!--jquery-->
+    <script src="libs/jquery.min.js"></script>
+    <!--bootstrap-->
+    <script src="libs/bootstrap/js/bootstrap.js"></script>
+    <script src="libs/bootstrap/js/bootstrap.offcanvas.min.js"></script>
+    <!--wow-->
+    <script src="libs/wow/wow.min.js"></script>
+    <!--angularjs-->
+    <script src="libs/angular/angular.min.js"></script>
+    <script src="libs/angular/angular-ui-router/angular-ui-router.js"></script>
+    <script src="libs/angular/angular-animate/angular-animate.js"></script>
+    <script src="libs/angular/angular-toaster/toaster.js"></script>
+    <script src="libs/angular/oclazyload/ocLazyLoad.js"></script>
+
+    <script src="js/app.config.js"></script>
+    <script src="js/route.config.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

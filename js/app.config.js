@@ -1,4 +1,4 @@
-var app = angular.module('myApp', ["ui.router", "oc.lazyLoad"]);
+var app = angular.module('myApp', ["ui.router", "oc.lazyLoad","toaster","ngAnimate"]);
 app.config(["$provide", "$compileProvider", "$controllerProvider", "$filterProvider",
     function ($provide, $compileProvider, $controllerProvider, $filterProvider) {
         app.controller = $controllerProvider.register;
@@ -39,11 +39,3 @@ function routeFn($ocLazyLoadProvider, Modules_Config) {
     });
 };
 
-var wow = new WOW({
-    boxClass: 'wow',
-    animateClass: 'animated',
-    offset: 0,
-    mobile: true,
-    live: true
-});
-wow.init();

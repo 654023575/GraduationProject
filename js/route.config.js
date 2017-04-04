@@ -5,21 +5,21 @@ function routeFn($stateProvider, $urlRouterProvider) {
     $stateProvider
         .state("main", {
             url: "/main",
-            templateUrl: "views/home/main.html",
+            templateUrl: "views/main/main.html",
             controller: "mainCtrl",
             resolve: {
                 deps: ["$ocLazyLoad", function ($ocLazyLoad) {
-                    return $ocLazyLoad.load("js/controllers/main.js");
+                    return $ocLazyLoad.load("js/controllers/main/mainCtrl.js");
                 }]
             }
         })
-        .state("adminUser", {
-            url: "/adminUser",
-            templateUrl: "views/home/adminUser.html",
-            controller: "adminUserCtrl",
+        .state("home", {
+            url: "/home",
+            templateUrl: "views/home/home.html",
+            controller: "homeCtrl",
             resolve: {
                 deps: ["$ocLazyLoad", function ($ocLazyLoad) {
-                    return $ocLazyLoad.load("js/controllers/adminUser.js");
+                    return $ocLazyLoad.load("js/controllers/home/homeCtrl.js");
                 }]
             }
         })

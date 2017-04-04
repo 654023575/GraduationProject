@@ -1,0 +1,39 @@
+
+css
+    animate.css 动画css
+    default.css 首页轮播图
+    font-awesome.min.css 字体图标css
+    main.css
+    normalize.css 一个可以定制的CSS文件，它让不同的浏览器在渲染网页元素的时候形式更统一。
+    owl.carousel.css jquery幻灯片
+fonts
+images
+    logo.png logo
+    slide 轮播图图片
+js
+    controllers Ctrl文件
+        main 首页
+            mainCtrl.js 首页Ctrl
+        home 居家
+            homeCtrl.js 居家Ctrl
+    app.config.js angular配置文件
+    route.config.js 路由配置文件
+    main.js 其他js
+libs
+    angular angularjs文件
+    bootstrap bootstrap文件
+    oclazyload 懒加载文件
+    wow 下拉页面滑动动画
+    jquery.js
+    jquery.min.js
+    jquery.touchSwipe.min.js
+views
+    clothes 服装
+    home 居家
+    kitchenware 餐厨
+    main 首页
+        lunbo.html 轮播图
+        main 主页面分割
+    tpl 页面分割
+index.html
+  
