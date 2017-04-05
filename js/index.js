@@ -1,12 +1,3 @@
-var wow = new WOW({
-    boxClass: 'wow',
-    animateClass: 'animated',
-    offset: 0,
-    mobile: true,
-    live: true
-});
-wow.init();
-
 $(".navbar-default .navbar-nav>li").each(function (index) {
     $(this).click(function () {
         $(".navbar-default .navbar-nav>li").removeClass("liactive");

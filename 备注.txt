@@ -1,28 +1,39 @@
 
 css
+    main 首页css
+       brand.css 品牌制造商js
     animate.css 动画css
     default.css 首页轮播图
     font-awesome.min.css 字体图标css
-    main.css
+    htmleaf-demo.css 轮播图css
+    index.css 主页css
     normalize.css 一个可以定制的CSS文件，它让不同的浏览器在渲染网页元素的时候形式更统一。
-    owl.carousel.css jquery幻灯片
+    demo.css
+    set1.css 鼠标悬停css
 fonts
 images
     logo.png logo
+    brands 品牌制造商图片
+    newpro 新品首发图片
     slide 轮播图图片
 js
     controllers Ctrl文件
         main 首页
+            brand.js 品牌制造商js
+            newpro.js 新品首发js
             mainCtrl.js 首页Ctrl
         home 居家
             homeCtrl.js 居家Ctrl
     app.config.js angular配置文件
     route.config.js 路由配置文件
-    main.js 其他js
+    index.js 主页js
+json
+    暂时json文件
 libs
     angular angularjs文件
     bootstrap bootstrap文件
     oclazyload 懒加载文件
+    owl jq展示轮播图
     wow 下拉页面滑动动画
     jquery.js
     jquery.min.js
@@ -33,6 +44,8 @@ views
     kitchenware 餐厨
     main 首页
         lunbo.html 轮播图
+        brand      品牌制造商
+        newpro     新品首发
         main 主页面分割
     tpl 页面分割
 index.html
