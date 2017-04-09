@@ -1,13 +1,15 @@
-#brand{
-    margin-top: 40px;
+#brand1,#brand2{
+    background-color: #f4f0ea;
+    padding-top: 15px
 }
 #title{
-    height: 50px;
+    margin:17px -15px 17px;
 }
 h2{
     display:inline;
     color:#333;
     font-weight:bold;
+    font-size: 28px;
 }
 #small{
     margin-top: 10px;
@@ -24,11 +26,12 @@ a:hover,a:focus{
     text-decoration: none;
 }
 @media screen and (max-width: 767px){
-    #brand{
-        margin-top: 30px;
+    #brand2{
+        padding-top: 0px;
+        margin-top: -15px;
     }
     #title{
-        height: 30px;
+        margin-top: 0px;
     }
    h2{
       font-size: 20px;

@@ -8,7 +8,7 @@ var wow = new WOW({
 wow.init();
 $('.owl-carousel-newpro').owlCarousel({
       loop:true,
-      margin:10,
+      margin:5,
       dots:false,
       lazyLoad:true,
       autoplay:true,
@@ -36,3 +36,4 @@ $('.owl-carousel-newpro').owlCarousel({
 //   autoplayTimeout	Type: Number	Default: 5000	旋转木马自动播放的时间间隔
 //   autoplayHoverPause	Type: Boolean	Default: false	是否在鼠标滑过时停止自动播放
 //   smartSpeed	Type: Number	Default: 250	滑动计算
+

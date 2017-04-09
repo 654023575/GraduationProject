@@ -47,6 +47,7 @@ views
         brand      品牌制造商
         newpro     新品首发
         main 主页面分割
+        types 商品分类
     tpl 页面分割
 index.html
   

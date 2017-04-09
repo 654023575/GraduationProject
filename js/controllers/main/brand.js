@@ -13,3 +13,25 @@ wow.init();
 // offset	整数	0	距离可视区域多少开始执行动画
 // mobile	布尔值	true	是否在移动设备上执行动画
 // live	布尔值	true	异步加载的内容是否有效
+
+$('.owl-carousel-brand').owlCarousel({
+      loop:true,
+      margin:5,
+      dots:false,
+      lazyLoad:true,
+    //   autoplay:true,
+      autoplayTimeout:5000,
+      autoplayHoverPause:true,
+      smartSpeed:1000,
+      responsive:{
+          0:{
+              items:2
+          },
+          600:{
+              items:3
+          },
+          1000:{
+              items:4
+          }
+      }
+  })

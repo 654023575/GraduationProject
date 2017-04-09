@@ -1,0 +1,26 @@
+#type{
+    margin-top: 20px;
+}
+#span1{
+    font-size: 14px;
+    display: inline-block;
+    border-left: 1px solid #666;
+    margin-left: 15px;
+    padding-left: 10px;
+}
+.box1{
+    display: flex;
+    justify-content: center;
+}
+.box1 > li{
+    list-style: none;
+    margin-right: 27px
+}
+@media screen and (max-width: 767px){
+    #span1{
+        display: none;
+    }
+    .box1{
+        display: none;
+    }
+}
