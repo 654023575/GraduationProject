@@ -28,10 +28,6 @@ a:hover,a:focus{
 @media screen and (max-width: 767px){
     #brand2{
         padding-top: 0px;
-        margin-top: -15px;
-    }
-    #title{
-        margin-top: 0px;
     }
    h2{
       font-size: 20px;

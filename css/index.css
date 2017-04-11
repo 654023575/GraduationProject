@@ -34,6 +34,40 @@ h1 ,h2, h3, h4, h5, h6
       margin-top: 63px;
     }
 }
+
+/*底部*/
+#bottom{
+  text-align: center;
+  background-color: #eee;
+  padding: 10px 0;
+}
+#promise{
+  padding-left: 0;
+  list-style: none;
+}
+#promise>li{
+  margin-top: 0.5rem;
+}
+.footer {
+   bottom: 0;
+   width: 100%;
+   height: 46px;
+   background-color: white;
+   border-top: 1px solid lightgray;
+}
+
+.footer span {
+   display: block;
+   padding: 12px 0 0 5px;
+   color: #999;
+}
+
+.footer a {
+   color: #999;
+   margin-left: 20px;
+}
+
+
 /*当屏幕最大为767px*/
 @media screen and (max-width: 767px){
     .offcanvas-toggle{

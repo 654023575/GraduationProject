@@ -16,10 +16,39 @@
     list-style: none;
     margin-right: 27px
 }
-@media screen and (max-width: 767px){
-    #span1{
+.box2{
+    display: flex; 
+    justify-content: space-between;
+}
+.thumbnail > a > img{
+    background-color: #f4f4f4
+}
+#banners{
+    margin-bottom: 10px;
+}
+.caption{
+    text-align: center;
+    font-family: "Microsoft YaHei";
+}
+.caption h3{
+    font-size: 1rem;
+}
+#shops{
+    padding-left: 0px;
+}
+@media screen and (min-width: 1301px){
+    .box2{
+        display: flex;
+        flex-wrap: wrap;    
+        justify-content: space-between;
+    }
+}
+@media screen and (max-width: 992px){
+        #span1{
         display: none;
     }
+}
+@media screen and (max-width: 767px){
     .box1{
         display: none;
     }
