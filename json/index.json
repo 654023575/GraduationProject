@@ -191,5 +191,63 @@
                 }
             ]
         }
+    ],
+    "quilt":[
+        {
+            "href":"#1",
+            "src":"images/home/beizhen1.png",
+            "alt":"baozhen1",
+            "item":"日式蓬软太鼓抱枕",
+            "price":"￥29"
+        },
+        {
+            "href":"#1",
+            "src":"images/home/beizhen2.png",
+            "alt":"baozhen1",
+            "item":"日式蓬软太鼓抱枕",
+            "price":"￥29"
+        },
+        {
+            "href":"#1",
+            "src":"images/home/beizhen3.png",
+            "alt":"baozhen1",
+            "item":"日式蓬软太鼓抱枕",
+            "price":"￥29"
+        },
+        {
+            "href":"#1",
+            "src":"images/home/baozhen1.png",
+            "alt":"baozhen1",
+            "item":"日式蓬软太鼓抱枕",
+            "price":"￥29"
+        },
+        {
+            "href":"#1",
+            "src":"images/home/beizhen1.png",
+            "alt":"baozhen1",
+            "item":"日式蓬软太鼓抱枕",
+            "price":"￥29"
+        },
+        {
+            "href":"#1",
+            "src":"images/home/beizhen1.png",
+            "alt":"baozhen1",
+            "item":"日式蓬软太鼓抱枕",
+            "price":"￥29"
+        },
+        {
+            "href":"#1",
+            "src":"images/home/beizhen1.png",
+            "alt":"baozhen1",
+            "item":"日式蓬软太鼓抱枕",
+            "price":"￥29"
+        },
+        {
+            "href":"#1",
+            "src":"images/home/beizhen1.png",
+            "alt":"baozhen1",
+            "item":"日式蓬软太鼓抱枕",
+            "price":"￥29"
+        }
     ]
 }

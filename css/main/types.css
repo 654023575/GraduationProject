@@ -20,7 +20,10 @@
     display: flex; 
     justify-content: space-between;
 }
-.thumbnail > a > img{
+.thumbnail1{
+    border: none;
+}
+.thumbnail1 > a > img{
     background-color: #f4f4f4
 }
 #banners{

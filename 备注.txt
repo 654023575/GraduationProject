@@ -41,6 +41,7 @@ libs
 views
     clothes 服装
     home 居家
+      quilt 被子
     kitchenware 餐厨
     main 首页
         lunbo.html 轮播图
