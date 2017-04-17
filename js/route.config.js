@@ -23,4 +23,34 @@ function routeFn($stateProvider, $urlRouterProvider) {
                 }]
             }
         })
+        .state("kitchenware", {
+            url: "/kitchenware",
+            templateUrl: "views/kitchenware/kitchenware.html",
+            controller: "kitchenCtrl",
+            resolve: {
+                deps: ["$ocLazyLoad", function ($ocLazyLoad) {
+                    return $ocLazyLoad.load("js/controllers/kitchenware/kitchenCtrl.js");
+                }]
+            }
+        })
+        .state("accessorice", {
+            url: "/accessorice",
+            templateUrl: "views/accessorice/accessorice.html",
+            controller: "accessCtrl",
+            resolve: {
+                deps: ["$ocLazyLoad", function ($ocLazyLoad) {
+                    return $ocLazyLoad.load("js/controllers/accessorice/accessCtrl.js");
+                }]
+            }
+        })
+        .state("groceries", {
+            url: "/groceries",
+            templateUrl: "views/groceries/groceries.html",
+            controller: "grocerCtrl",
+            resolve: {
+                deps: ["$ocLazyLoad", function ($ocLazyLoad) {
+                    return $ocLazyLoad.load("js/controllers/groceries/grocerCtrl.js");
+                }]
+            }
+        })
 };

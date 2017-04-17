@@ -14,44 +14,32 @@
         },
         {
             "name": "网易严选爱，囿于厨房篇 - 一口好锅，炖煮生活一日三餐、传统工艺 源自中国刀城、下厨省力小帮手、餐桌上的舞蹈、精工生产制作，匠人手艺、先进工艺制造，功夫体验、真空保鲜，美味不限时、环保便利，聪明之选、厨房里的省心小电器",
+            "item": "餐厨",
+            "url": "#/kitchenware",
+            "isclick": false
+        },
+        {
+            "name": "网易严选爱，囿于厨房篇 - 一口好锅，炖煮生活一日三餐、传统工艺 源自中国刀城、下厨省力小帮手、餐桌上的舞蹈、精工生产制作，匠人手艺、先进工艺制造，功夫体验、真空保鲜，美味不限时、环保便利，聪明之选、厨房里的省心小电器",
             "item": "配件",
-            "url": "#",
-            "isclick": false
-        },
-        {
-            "name": "网易严选爱，囿于厨房篇 - 一口好锅，炖煮生活一日三餐、传统工艺 源自中国刀城、下厨省力小帮手、餐桌上的舞蹈、精工生产制作，匠人手艺、先进工艺制造，功夫体验、真空保鲜，美味不限时、环保便利，聪明之选、厨房里的省心小电器",
-            "item": "服装",
-            "url": "#",
-            "isclick": false
-        },
-        {
-            "name": "网易严选爱，囿于厨房篇 - 一口好锅，炖煮生活一日三餐、传统工艺 源自中国刀城、下厨省力小帮手、餐桌上的舞蹈、精工生产制作，匠人手艺、先进工艺制造，功夫体验、真空保鲜，美味不限时、环保便利，聪明之选、厨房里的省心小电器",
-            "item": "洗护",
-            "url": "#",
-            "isclick": false
-        },
-        {
-            "name": "网易严选爱，囿于厨房篇 - 一口好锅，炖煮生活一日三餐、传统工艺 源自中国刀城、下厨省力小帮手、餐桌上的舞蹈、精工生产制作，匠人手艺、先进工艺制造，功夫体验、真空保鲜，美味不限时、环保便利，聪明之选、厨房里的省心小电器",
-            "item": "婴童",
-            "url": "#",
+            "url": "#/accessorice",
             "isclick": false
         },
         {
             "name": "网易严选爱，囿于厨房篇 - 一口好锅，炖煮生活一日三餐、传统工艺 源自中国刀城、下厨省力小帮手、餐桌上的舞蹈、精工生产制作，匠人手艺、先进工艺制造，功夫体验、真空保鲜，美味不限时、环保便利，聪明之选、厨房里的省心小电器",
             "item": "杂货",
-            "url": "#",
+            "url": "#/groceries",
             "isclick": false
         },
         {
             "name": "网易严选爱，囿于厨房篇 - 一口好锅，炖煮生活一日三餐、传统工艺 源自中国刀城、下厨省力小帮手、餐桌上的舞蹈、精工生产制作，匠人手艺、先进工艺制造，功夫体验、真空保鲜，美味不限时、环保便利，聪明之选、厨房里的省心小电器",
             "item": "饮食",
-            "url": "#",
+            "url": "#/food",
             "isclick": false
         },
         {
             "name": "网易严选爱，囿于厨房篇 - 一口好锅，炖煮生活一日三餐、传统工艺 源自中国刀城、下厨省力小帮手、餐桌上的舞蹈、精工生产制作，匠人手艺、先进工艺制造，功夫体验、真空保鲜，美味不限时、环保便利，聪明之选、厨房里的省心小电器",
-            "item": "其他",
-            "url": "#",
+            "item": "志趣",
+            "url": "#/interesting",
             "isclick": false
         }
     ],
@@ -192,62 +180,62 @@
             ]
         }
     ],
-    "quilt":[
+    "quilt": [
         {
-            "href":"#1",
-            "src":"images/home/beizhen1.png",
-            "alt":"baozhen1",
-            "item":"日式蓬软太鼓抱枕",
-            "price":"￥29"
+            "href": "#1",
+            "src": "images/home/beizhen1.png",
+            "alt": "baozhen1",
+            "item": "日式蓬软太鼓抱枕",
+            "price": "￥29"
         },
         {
-            "href":"#1",
-            "src":"images/home/beizhen2.png",
-            "alt":"baozhen1",
-            "item":"日式蓬软太鼓抱枕",
-            "price":"￥29"
+            "href": "#1",
+            "src": "images/home/beizhen2.png",
+            "alt": "baozhen1",
+            "item": "日式蓬软太鼓抱枕",
+            "price": "￥29"
         },
         {
-            "href":"#1",
-            "src":"images/home/beizhen3.png",
-            "alt":"baozhen1",
-            "item":"日式蓬软太鼓抱枕",
-            "price":"￥29"
+            "href": "#1",
+            "src": "images/home/beizhen3.png",
+            "alt": "baozhen1",
+            "item": "日式蓬软太鼓抱枕",
+            "price": "￥29"
         },
         {
-            "href":"#1",
-            "src":"images/home/baozhen1.png",
-            "alt":"baozhen1",
-            "item":"日式蓬软太鼓抱枕",
-            "price":"￥29"
+            "href": "#1",
+            "src": "images/home/baozhen1.png",
+            "alt": "baozhen1",
+            "item": "日式蓬软太鼓抱枕",
+            "price": "￥29"
         },
         {
-            "href":"#1",
-            "src":"images/home/beizhen1.png",
-            "alt":"baozhen1",
-            "item":"日式蓬软太鼓抱枕",
-            "price":"￥29"
+            "href": "#1",
+            "src": "images/home/beizhen1.png",
+            "alt": "baozhen1",
+            "item": "日式蓬软太鼓抱枕",
+            "price": "￥29"
         },
         {
-            "href":"#1",
-            "src":"images/home/beizhen1.png",
-            "alt":"baozhen1",
-            "item":"日式蓬软太鼓抱枕",
-            "price":"￥29"
+            "href": "#1",
+            "src": "images/home/beizhen1.png",
+            "alt": "baozhen1",
+            "item": "日式蓬软太鼓抱枕",
+            "price": "￥29"
         },
         {
-            "href":"#1",
-            "src":"images/home/beizhen1.png",
-            "alt":"baozhen1",
-            "item":"日式蓬软太鼓抱枕",
-            "price":"￥29"
+            "href": "#1",
+            "src": "images/home/beizhen1.png",
+            "alt": "baozhen1",
+            "item": "日式蓬软太鼓抱枕",
+            "price": "￥29"
         },
         {
-            "href":"#1",
-            "src":"images/home/beizhen1.png",
-            "alt":"baozhen1",
-            "item":"日式蓬软太鼓抱枕",
-            "price":"￥29"
+            "href": "#1",
+            "src": "images/home/beizhen1.png",
+            "alt": "baozhen1",
+            "item": "日式蓬软太鼓抱枕",
+            "price": "￥29"
         }
     ]
 }
