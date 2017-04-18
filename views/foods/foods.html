@@ -1,13 +1,13 @@
 <link rel="stylesheet" href="css/main/types.css">
 <link rel="stylesheet" href="css/home/home.css">
-<div ng-controller="grocerCtrl">
+<div ng-controller="foodsCtrl">
     <!--<span>{{value}}</span>-->
     <div class="container-fluid" style="background-color:#f5f5f5">
         <div class="row">
             <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12">
                 <ol class="breadcrumb">
                     <li><a href="#/main">首页</a></li>
-                    <li class="active">杂货</li>
+                    <li class="active">饮食</li>
                 </ol>
             </div>
         </div>
@@ -21,15 +21,42 @@
 
         <div class="row">
             <div class="col-lg-3 col-lg-offset-5 col-md-5 col-md-offset-5 col-sm-5 col-sm-offset-5 col-xs-12" style="margin-top:30px;">
-                <img class="hqlogo logoimg-responsive" src="images/groceries/stationery/stationery.png" alt="logo">
-                <span class="hqtitle">文具</span>
-                <span>找回书写的力量</span>
+                <img class="hqlogo logoimg-responsive" src="images/foods/pastry/pastry.png" alt="logo">
+                <span class="hqtitle">糕点</span>
+                <span>四季糕点，用心烘焙</span>
             </div>
         </div>
         <div class="row">
             <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12">
                 <ul class="quilt">
-                    <li ng-repeat="s in stationery">
+                    <li ng-repeat="p in pastry">
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6" style="padding-right:5px;padding-left:0;">
+                            <div class="thumbnail">
+                                <a href="{{p.href}}">
+                                    <img src="{{p.src}}" alt="{{p.alt}}" class="img-responsive">
+                                </a>
+                                <div class="caption">
+                                    <h3><a href="{{p.href}}">{{p.item}}</a></h3>
+                                    <p>{{p.price}}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-3 col-lg-offset-5 col-md-5 col-md-offset-5 col-sm-5 col-sm-offset-5 col-xs-12" style="margin-top:30px;">
+                <img class="hqlogo logoimg-responsive" src="images/foods/pastry/pastry.png" alt="logo">
+                <span class="hqtitle">小食</span>
+                <span>天然原料，健康烹饪</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12">
+                <ul class="quilt">
+                    <li ng-repeat="s in snack">
                         <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6" style="padding-right:5px;padding-left:0;">
                             <div class="thumbnail">
                                 <a href="{{s.href}}">
@@ -48,23 +75,76 @@
 
         <div class="row">
             <div class="col-lg-3 col-lg-offset-5 col-md-5 col-md-offset-5 col-sm-5 col-sm-offset-5 col-xs-12" style="margin-top:30px;">
-                <img class="hqlogo logoimg-responsive" src="images/groceries/incroporated/incroporated.png" alt="logo">
-                <span class="hqtitle">收纳</span>
-                <span>选自古驰竹柄原料供应商</span>
+                <img class="hqlogo logoimg-responsive" src="images/foods/dryfruit/dryfruit.png" alt="logo">
+                <span class="hqtitle">果干</span>
+                <span>健康，好味道</span>
             </div>
         </div>
         <div class="row">
             <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12">
                 <ul class="quilt">
-                    <li ng-repeat="i in incroporated">
+                    <li ng-repeat="d in dryfruit">
                         <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6" style="padding-right:5px;padding-left:0;">
                             <div class="thumbnail">
-                                <a href="{{i.href}}">
-                                    <img src="{{i.src}}" alt="{{i.alt}}" class="img-responsive">
+                                <a href="{{d.href}}">
+                                    <img src="{{d.src}}" alt="{{d.alt}}" class="img-responsive">
                                 </a>
                                 <div class="caption">
-                                    <h3><a href="{{i.href}}">{{i.item}}</a></h3>
-                                    <p>{{i.price}}</p>
+                                    <h3><a href="{{d.href}}">{{d.item}}</a></h3>
+                                    <p>{{d.price}}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-lg-offset-5 col-md-5 col-md-offset-5 col-sm-5 col-sm-offset-5 col-xs-12" style="margin-top:30px;">
+                <img class="hqlogo logoimg-responsive" src="images/foods/nut/nut.png" alt="logo">
+                <span class="hqtitle">坚果</span>
+                <span>原产地直供，颗颗饱满</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12">
+                <ul class="quilt">
+                    <li ng-repeat="n in nut">
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6" style="padding-right:5px;padding-left:0;">
+                            <div class="thumbnail">
+                                <a href="{{n.href}}">
+                                    <img src="{{n.src}}" alt="{{n.alt}}" class="img-responsive">
+                                </a>
+                                <div class="caption">
+                                    <h3><a href="{{n.href}}">{{n.item}}</a></h3>
+                                    <p>{{n.price}}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-3 col-lg-offset-5 col-md-5 col-md-offset-5 col-sm-5 col-sm-offset-5 col-xs-12" style="margin-top:30px;">
+                <img class="hqlogo logoimg-responsive" src="images/foods/drink/drink.png" alt="logo">
+                <span class="hqtitle">冲饮</span>
+                <span>用料天然，谷香四溢</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12">
+                <ul class="quilt">
+                    <li ng-repeat="d in drink">
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6" style="padding-right:5px;padding-left:0;">
+                            <div class="thumbnail">
+                                <a href="{{d.href}}">
+                                    <img src="{{d.src}}" alt="{{d.alt}}" class="img-responsive">
+                                </a>
+                                <div class="caption">
+                                    <h3><a href="{{d.href}}">{{d.item}}</a></h3>
+                                    <p>{{d.price}}</p>
                                 </div>
                             </div>
                         </div>
@@ -75,15 +155,15 @@
         
         <div class="row">
             <div class="col-lg-3 col-lg-offset-5 col-md-5 col-md-offset-5 col-sm-5 col-sm-offset-5 col-xs-12" style="margin-top:30px;">
-                <img class="hqlogo logoimg-responsive" src="images/groceries/travel/travel.png" alt="logo">
-                <span class="hqtitle">旅行</span>
-                <span>旅途，贴心相伴</span>
+                <img class="hqlogo logoimg-responsive" src="images/foods/tea/tea.png" alt="logo">
+                <span class="hqtitle">茗茶</span>
+                <span>大师级好茶，带来慢生活</span>
             </div>
         </div>
         <div class="row">
             <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12">
                 <ul class="quilt">
-                    <li ng-repeat="t in travel">
+                    <li ng-repeat="t in tea">
                         <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6" style="padding-right:5px;padding-left:0;">
                             <div class="thumbnail">
                                 <a href="{{t.href}}">
@@ -99,87 +179,10 @@
                 </ul>
             </div>
         </div>
-        
-        <div class="row">
-            <div class="col-lg-3 col-lg-offset-5 col-md-5 col-md-offset-5 col-sm-5 col-sm-offset-5 col-xs-12" style="margin-top:30px;">
-                <img class="hqlogo logoimg-responsive" src="images/groceries/foreign/foreign.png" alt="logo">
-                <span class="hqtitle">海外</span>
-                <span>来自海外制造商的好物</span>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12">
-                <ul class="quilt">
-                    <li ng-repeat="f in foreign">
-                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6" style="padding-right:5px;padding-left:0;">
-                            <div class="thumbnail">
-                                <a href="{{f.href}}">
-                                    <img src="{{f.src}}" alt="{{f.alt}}" class="img-responsive">
-                                </a>
-                                <div class="caption">
-                                    <h3><a href="{{f.href}}">{{f.item}}</a></h3>
-                                    <p>{{f.price}}</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        
-        <div class="row">
-            <div class="col-lg-3 col-lg-offset-5 col-md-5 col-md-offset-5 col-sm-5 col-sm-offset-5 col-xs-12" style="margin-top:30px;">
-                <img class="hqlogo logoimg-responsive" src="images/groceries/outdoor/outdoor.png" alt="logo">
-                <span class="hqtitle">户外</span>
-                <span>MUJI、Nike等制造商出品</span>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12">
-                <ul class="quilt">
-                    <li ng-repeat="o in outdoor">
-                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6" style="padding-right:5px;padding-left:0;">
-                            <div class="thumbnail">
-                                <a href="{{o.href}}">
-                                    <img src="{{o.src}}" alt="{{o.alt}}" class="img-responsive">
-                                </a>
-                                <div class="caption">
-                                    <h3><a href="{{o.href}}">{{o.item}}</a></h3>
-                                    <p>{{o.price}}</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        
-        <div class="row">
-            <div class="col-lg-3 col-lg-offset-5 col-md-5 col-md-offset-5 col-sm-5 col-sm-offset-5 col-xs-12" style="margin-top:30px;">
-                <img class="hqlogo logoimg-responsive" src="images/groceries/record/record.png" alt="logo">
-                <span class="hqtitle">唱片</span>
-                <span>经典音乐，用心典藏</span>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12">
-                <ul class="quilt">
-                    <li ng-repeat="r in record">
-                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6" style="padding-right:5px;padding-left:0;">
-                            <div class="thumbnail">
-                                <a href="{{r.href}}">
-                                    <img src="{{r.src}}" alt="{{r.alt}}" class="img-responsive">
-                                </a>
-                                <div class="caption">
-                                    <h3><a href="{{r.href}}">{{r.item}}</a></h3>
-                                    <p>{{r.price}}</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        
+
+
+
+
+
     </div>
 </div>

@@ -53,4 +53,24 @@ function routeFn($stateProvider, $urlRouterProvider) {
                 }]
             }
         })
+        .state("foods", {
+            url: "/foods",
+            templateUrl: "views/foods/foods.html",
+            controller: "foodsCtrl",
+            resolve: {
+                deps: ["$ocLazyLoad", function ($ocLazyLoad) {
+                    return $ocLazyLoad.load("js/controllers/foods/foodsCtrl.js");
+                }]
+            }
+        })
+        .state("interest", {
+            url: "/interest",
+            templateUrl: "views/interest/interest.html",
+            controller: "interestCtrl",
+            resolve: {
+                deps: ["$ocLazyLoad", function ($ocLazyLoad) {
+                    return $ocLazyLoad.load("js/controllers/interest/interestCtrl.js");
+                }]
+            }
+        })
 };
