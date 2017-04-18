@@ -1,15 +1,15 @@
 jQuery(document).ready(function($) {	
 			if($("meta[name=toTop]").attr("content")=="true"){
 				$("<div id='toTop'><img src='images/toTop.png' class='img-responsive'></div>").appendTo('body');
-				$("#toTop").css({
-					width: '50px',
-					height: '50px',
-					bottom:'1rem',
-					right:'1rem',
-					position:'fixed',
-					cursor:'pointer',
-					zIndex:'999999',
-				});
+				// $("#toTop").css({
+				// 	width: '50px',
+				// 	height: '50px',
+				// 	bottom:'1rem',
+				// 	right:'1rem',
+				// 	position:'fixed',
+				// 	cursor:'pointer',
+				// 	zIndex:'999999'
+				// });
 				if($(this).scrollTop()==0){
 						$("#toTop").hide();
 					}

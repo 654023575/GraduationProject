@@ -49,22 +49,28 @@
             "summary": "回家，放松身心",
             "type": [
                 {
+                    "href": "#/home#quilt",
                     "name": "被枕"
                 },
                 {
-                    "name": "床品套件"
-                },
-                {
+                    "href": "#/home#mattress",
                     "name": "床垫"
                 },
                 {
-                    "name": "地垫"
+                    "href": "#/home#carpet",
+                    "name": "地毯"
                 },
                 {
+                    "href": "#/home#furniture",
                     "name": "家具"
                 },
                 {
-                    "name": "灯具"
+                    "href": "#/home#cushion",
+                    "name": "舒坐"
+                },
+                {
+                    "href": "#/home#decoration",
+                    "name": "装饰"
                 }
             ]
         },
@@ -73,22 +79,24 @@
             "summary": "爱，囿于厨房",
             "type": [
                 {
+                    "href": "#/kitchenware#pot",
                     "name": "锅具"
                 },
                 {
+                    "href": "#/kitchenware#spatula",
                     "name": "刀铲"
                 },
                 {
-                    "name": "功能厨具"
-                },
-                {
+                    "href": "#/kitchenware#tableware",
                     "name": "餐具"
                 },
                 {
+                    "href": "#/kitchenware#cup",
                     "name": "杯壶"
                 },
                 {
-                    "name": "厨房电器"
+                    "href": "#/kitchenware#clean",
+                    "name": "清洁"
                 }
             ]
         },
@@ -97,64 +105,24 @@
             "summary": "配角，亦是主角",
             "type": [
                 {
-                    "name": "功能箱包"
+                    "href": "#/accessorice#luggage",
+                    "name": "箱包"
                 },
                 {
-                    "name": "双肩包"
+                    "href": "#/accessorice#backpack",
+                    "name": "背包"
                 },
                 {
-                    "name": "单肩包"
-                },
-                {
-                    "name": "鞋"
-                },
-                {
+                    "href": "#/accessorice#slipper",
                     "name": "拖鞋"
                 },
                 {
+                    "href": "#/accessorice#scarf",
+                    "name": "围巾"
+                },
+                {
+                    "href": "#/accessorice#ornament",
                     "name": "配饰"
-                }
-            ]
-        },
-        {
-            "item": "服装",
-            "summary": "贴身的，要亲肤",
-            "type": [
-                {
-                    "name": "袜子"
-                },
-                {
-                    "name": "外衣"
-                },
-                {
-                    "name": "家居服"
-                },
-                {
-                    "name": "衬衫"
-                },
-                {
-                    "name": "T恤"
-                }
-            ]
-        },
-        {
-            "item": " 洗护",
-            "summary": "亲肤之物，严选天然",
-            "type": [
-                {
-                    "name": "毛巾"
-                },
-                {
-                    "name": "香薰"
-                },
-                {
-                    "name": "美妆"
-                },
-                {
-                    "name": "护发"
-                },
-                {
-                    "name": "日用清洁"
                 }
             ]
         },
@@ -163,79 +131,90 @@
             "summary": "解忧，每个烦恼",
             "type": [
                 {
+                    "href": "#/groceries#stationery",
                     "name": "文具"
                 },
                 {
+                    "href": "#/groceries#incroporated",
                     "name": "收纳"
                 },
                 {
+                    "href": "#/groceries#travel",
                     "name": "旅行"
                 },
                 {
-                    "name": "雨具"
+                    "href": "#/groceries#foreign",
+                    "name": "海外"
                 },
                 {
+                    "href": "#/groceries#outdoor",
                     "name": "户外"
+                },
+                {
+                    "href": "#/groceries#record",
+                    "name": "唱片"
                 }
             ]
-        }
-    ],
-    "quilt": [
-        {
-            "href": "#1",
-            "src": "images/home/beizhen1.png",
-            "alt": "baozhen1",
-            "item": "日式蓬软太鼓抱枕",
-            "price": "￥29"
         },
         {
-            "href": "#1",
-            "src": "images/home/beizhen2.png",
-            "alt": "baozhen1",
-            "item": "日式蓬软太鼓抱枕",
-            "price": "￥29"
+            "item": "饮食",
+            "summary": "解忧，每个烦恼",
+            "type": [
+                {
+                    "href": "#/foods#pastry",
+                    "name": "糕点"
+                },
+                {
+                    "href": "#/foods#snack",
+                    "name": "小食"
+                },
+                {
+                    "href": "#/foods#dryfruit",
+                    "name": "果干"
+                },
+                {
+                    "href": "#/foods#nut",
+                    "name": "坚果"
+                },
+                {
+                    "href": "#/foods#drink",
+                    "name": "冲饮"
+                },
+                {
+                    "href": "#/foods#tea",
+                    "name": "茗茶"
+                }
+            ]
         },
         {
-            "href": "#1",
-            "src": "images/home/beizhen3.png",
-            "alt": "baozhen1",
-            "item": "日式蓬软太鼓抱枕",
-            "price": "￥29"
-        },
-        {
-            "href": "#1",
-            "src": "images/home/baozhen1.png",
-            "alt": "baozhen1",
-            "item": "日式蓬软太鼓抱枕",
-            "price": "￥29"
-        },
-        {
-            "href": "#1",
-            "src": "images/home/beizhen1.png",
-            "alt": "baozhen1",
-            "item": "日式蓬软太鼓抱枕",
-            "price": "￥29"
-        },
-        {
-            "href": "#1",
-            "src": "images/home/beizhen1.png",
-            "alt": "baozhen1",
-            "item": "日式蓬软太鼓抱枕",
-            "price": "￥29"
-        },
-        {
-            "href": "#1",
-            "src": "images/home/beizhen1.png",
-            "alt": "baozhen1",
-            "item": "日式蓬软太鼓抱枕",
-            "price": "￥29"
-        },
-        {
-            "href": "#1",
-            "src": "images/home/beizhen1.png",
-            "alt": "baozhen1",
-            "item": "日式蓬软太鼓抱枕",
-            "price": "￥29"
+            "item": "志趣",
+            "summary": "解忧，每个烦恼",
+            "type": [
+                {
+                    "href": "/interest#wow",
+                    "name": "魔兽"
+                },
+                {
+                    "href": "/interest#hs",
+                    "name": "炉石"
+                },
+                {
+                    "href": "/interest#ow",
+                    "name": "守望"
+                },
+                {
+                    "href": "/interest#diablo",
+                    "name": "暗黑III"
+                },
+                {
+                    "href": "/interest#starCarft",
+                    "name": "星际II"
+                },
+                {
+                    "href": "/interest#heros",
+                    "name": "风暴"
+                }
+            ]
         }
     ]
 }

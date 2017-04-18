@@ -66,10 +66,28 @@ h1 ,h2, h3, h4, h5, h6
    color: #999;
    margin-left: 20px;
 }
-
-
+#toTop{
+  width: 50px;
+  height: 50px;
+  bottom: 1rem;
+  right: 1rem;
+  position: fixed;
+  cursor: pointer;
+  z-index: 999999;
+  border-radius: 50px;
+}
 /*当屏幕最大为767px*/
 @media screen and (max-width: 767px){
+    #toTop{
+      width: 30px;
+      height: 30px;
+      bottom: 1rem;
+      right: 1rem;
+      position: fixed;
+      cursor: pointer;
+      z-index: 999999;
+      border-radius: 50px;
+    }
     .offcanvas-toggle{
       background-color: white;
     }

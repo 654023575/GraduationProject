@@ -73,4 +73,24 @@ function routeFn($stateProvider, $urlRouterProvider) {
                 }]
             }
         })
+        .state("login",{
+            url: "/login",
+            templateUrl: "views/login/login.html",
+            controller: "loginCtrl",
+            resolve: {
+                deps: ["$ocLazyLoad", function ($ocLazyLoad) {
+                    return $ocLazyLoad.load("js/controllers/login/loginCtrl.js");
+                }]
+            }
+        })
+        .state("regist",{
+            url: "/regist",
+            templateUrl: "views/regist/regist.html",
+            controller: "registCtrl",
+            resolve: {
+                deps: ["$ocLazyLoad", function ($ocLazyLoad) {
+                    return $ocLazyLoad.load("js/controllers/regist/registCtrl.js");
+                }]
+            }
+        })
 };
