@@ -1,6 +1,6 @@
 "use strict"
-app.config(["$stateProvider", "$urlRouterProvider", routeFn]);
-function routeFn($stateProvider, $urlRouterProvider) {
+app.config(["$stateProvider", "$urlRouterProvider", "$locationProvider",routeFn]);
+function routeFn($stateProvider, $urlRouterProvider, $locationProvider) {
     $urlRouterProvider.otherwise("/main");
     $stateProvider
         .state("main", {
@@ -13,6 +13,7 @@ function routeFn($stateProvider, $urlRouterProvider) {
                 }]
             }
         })
+        // 居家
         .state("home", {
             url: "/home",
             templateUrl: "views/home/home.html",
@@ -23,6 +24,18 @@ function routeFn($stateProvider, $urlRouterProvider) {
                 }]
             }
         })
+        // 居家 被枕
+        .state("quilt1", {
+            url: "/quilt1",
+            templateUrl: "views/home/quilt/quilt1.html",
+            controller: "quilt1Ctrl",
+            resolve: {
+                deps: ["$ocLazyLoad", function ($ocLazyLoad) {
+                    return $ocLazyLoad.load("js/controllers/home/quilt/quilt1Ctrl.js");
+                }]
+            }
+        })
+        
         .state("kitchenware", {
             url: "/kitchenware",
             templateUrl: "views/kitchenware/kitchenware.html",
